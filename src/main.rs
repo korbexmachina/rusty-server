@@ -5,11 +5,14 @@ use std::{
 };
 
 fn main() {
+    // bind to port
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
 
+    // listen for connections
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 
+        // handle connections
         handle_connection(stream);
     }
 }
