@@ -7,5 +7,5 @@ Based on the final project from the rust-lang book.
 ## Roadmap
 
 - [x] Basic functionality
-- [ ] Multi-threading
+- [x] Multi-threading
 - [ ] Graceful shutdown
